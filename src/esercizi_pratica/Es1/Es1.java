@@ -10,6 +10,8 @@ public class Es1 {
 
         String s=scanner.nextLine();
 
+//        System.out.println((stringaPariDispari(s))); monoriga al if else di sotto
+
         if (stringaPariDispari(s)){
             System.out.println("la stringa ha un numero di caratteri pari");
         } else {
@@ -28,12 +30,14 @@ public class Es1 {
     public static boolean stringaPariDispari(String s){
         return s.length() % 2 == 0;
     }
+
+
     public static boolean annoBisestile(int anno){
-        if (anno %4 ==0 && anno % 100 != 0) {
+        if ((anno %4 ==0 && anno % 100 != 0) || (anno%100==0 && anno%400==0)) {
             return true;
 
-        } else if(anno %400 ==0) {
-            return true;
+//        } else if(anno %400 ==0) {
+//            return true;
         } else  {return false;}
 
     }
