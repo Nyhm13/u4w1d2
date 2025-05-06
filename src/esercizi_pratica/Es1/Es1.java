@@ -16,6 +16,13 @@ public class Es1 {
             System.out.println("la stringa ha un numero di caratteri dispari");
         }
 
+        System.out.println("inserisci un anno per vedere se e bisestile o no");
+        int anno= scanner.nextInt();
+        if (annoBisestile(anno)){
+            System.out.println("anno bisestile");
+        } else {
+            System.out.println("anno non bisestile");
+        }
     }
 
     public static boolean stringaPariDispari(String s){
